@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <h3>具体结果请点击右键，进入检查，查看console。</h3>
+</div>
+<script src="../dist/build.js"></script>
+<script>
+    let mvvm = new MVVM({
+        el : "#div1",
+        data:{
+            a:"a",
+            b:[1,2,3]
+        }
+    });
+    document.write(mvvm.data.a)
+    document.write(mvvm.data.b)
+    document.write(mvvm.data.b[2])
+</script>
+</body>
+</html>

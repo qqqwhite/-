@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <h3>代码：a: { {a} }</h3>
+    <h3>效果</h3>
+    <h3>a: {{a}}</h3>
+    <br>
+    <h3>代码：b: { {b} }</h3>
+    <h3>效果：</h3>
+    <h3>b: {{b}}</h3>
+</div>
+<script src="../dist/build.js"></script>
+<script>
+    let mvvm = new MVVM({
+        el : "#div1",
+        data:{
+            a:"a",
+            b:"b",
+        }
+    });
+</script>
+</body>
+</html>
