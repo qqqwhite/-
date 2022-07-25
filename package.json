@@ -2,6 +2,7 @@
   "name": "mvvm",
   "version": "1.0.0",
   "scripts": {
+    "init": "webpack",
     "test": "jest"
   },
   "keywords": [],
